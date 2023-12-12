@@ -1,8 +1,8 @@
-import React from "react";
-import LocationDto from "../../type/LocationDto";
-import MapDisplay from "../MapDisplay/MapDisplay";
-import TextEnum from "../../type/enum/TextEnum";
-import StyledLocationDisplay from "./StyledLocationDisplay";
+import React from 'react';
+import LocationDto from '../../type/LocationDto';
+import MapDisplay from '../MapDisplay/MapDisplay';
+import TextEnum from '../../type/enum/TextEnum';
+import StyledLocationDisplay from './StyledLocationDisplay';
 
 type LocationDisplayProps = {
   title: string;
@@ -10,11 +10,7 @@ type LocationDisplayProps = {
   locationData: LocationDto;
 };
 
-const LocationDisplay: React.FC<LocationDisplayProps> = ({
-  title,
-  location,
-  locationData,
-}) => {
+const LocationDisplay: React.FC<LocationDisplayProps> = ({ title, location, locationData }) => {
   return (
     <StyledLocationDisplay>
       <h3>{title}</h3>

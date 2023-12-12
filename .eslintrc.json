@@ -1,0 +1,57 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "jest": true
+  },
+  "extends": [
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:prettier/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module"
+  },
+  "plugins": ["react", "@typescript-eslint"],
+  "rules": {
+    "@typescript-eslint/no-var-requires": 0,
+    "react/function-component-definition": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/require-default-props": "off",
+    "react/prop-types": "off",
+    "jsx-a11y/anchor-is-valid": "off",
+    "no-console": ["error", { "allow": ["error"] }],
+    "default-param-last": "off",
+    "import/extensions": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto",
+        "singleQuote": true
+      }
+    ],
+    "react/jsx-props-no-spreading": "off",
+    "no-param-reassign": 0,
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": ["error"],
+    "react/jsx-filename-extension": [
+      "warn",
+      {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"]
+      }
+    ],
+    "no-shadow": "off",
+    "@typescript-eslint/no-shadow": ["error"]
+  },
+  "settings": {
+    "import/resolver": {
+      "typescript": {}
+    }
+  }
+}

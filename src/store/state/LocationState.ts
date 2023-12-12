@@ -1,4 +1,4 @@
-import LocationDto from "../../type/LocationDto";
+import LocationDto from '../../type/LocationDto';
 
 export interface LocationState {
   currentLocation: LocationDto;

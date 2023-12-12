@@ -1,5 +1,5 @@
 enum RoutingPath {
-  MainPage = "/",
+  MainPage = '/'
 }
 
 export default RoutingPath;

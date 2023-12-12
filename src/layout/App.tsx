@@ -1,5 +1,5 @@
-import { ReactNode } from "react";
-import StyledApp from "./StyledApp";
+import { ReactNode } from 'react';
+import StyledApp from './StyledApp';
 
 type AppProps = {
   children: ReactNode;
