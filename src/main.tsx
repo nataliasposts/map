@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './layout/App.tsx';
-import './index.css';
+import './style/index.css';
 import { BrowserRouter } from 'react-router-dom';
 import RootRouter from './router/RootRouter.tsx';
 import 'react-toastify/dist/ReactToastify.css';

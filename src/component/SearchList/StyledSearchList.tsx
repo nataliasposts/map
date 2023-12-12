@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { buttonBackground, borderRadious } from '../../style/style';
 
 const StyledSearchList = styled.div({
   width: '20%',
@@ -18,10 +19,10 @@ const StyledSearchList = styled.div({
     margin: '5px 0 5px 0'
   },
   '.clean-button': {
-    backgroundColor: '#89CFF0',
+    backgroundColor: buttonBackground,
     width: '60px',
     padding: '10px',
-    borderRadius: '8px',
+    borderRadius: borderRadious,
     marginLeft: '5px'
   }
 });
