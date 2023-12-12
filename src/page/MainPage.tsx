@@ -81,7 +81,7 @@ const MainPage = () => {
       return;
     }
     axios
-      .get(`http://api.ipstack.com/${query}?access_key=${API_KEY}`)
+      .get(`https://api.ipstack.com/${query}?access_key=${API_KEY}`)
       .then((response) => {
         const { latitude, longitude, city, country_name, region_name, zip } = response.data;
         if (latitude && longitude) {
