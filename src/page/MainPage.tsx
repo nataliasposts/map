@@ -47,14 +47,16 @@ const MainPage = () => {
             `https://nominatim.openstreetmap.org/reverse?format=json&lat=${latitude}&lon=${longitude}`
           );
           const { address } = response.data;
-          dispatch(setCurrentLocationData({
-            city: address.city,
-            country_name: address.country,
-            zip: address.postcode,
-            region_name: address.state,
-            lat: latitude,
-            lng: longitude
-          }));
+          dispatch(
+            setCurrentLocationData({
+              city: address.city,
+              country_name: address.country,
+              zip: address.postcode,
+              region_name: address.state,
+              lat: latitude,
+              lng: longitude
+            })
+          );
         } catch (error) {
           toast.error(`Error getting location information: ${error}`, {
             position: 'top-right'

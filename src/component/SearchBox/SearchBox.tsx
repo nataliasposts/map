@@ -12,11 +12,13 @@ const SearchBox: React.FC<SearchBoxProps> = ({ onSearch }) => {
   const handleSearchClick = () => {
     const trimmedQuery = query.trim();
     onSearch(trimmedQuery);
+    setQuery('')
   };
 
   const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
     if (event.key === 'Enter') {
       handleSearchClick();
+      setQuery('')
     }
   };
 

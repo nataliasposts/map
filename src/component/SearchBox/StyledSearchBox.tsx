@@ -7,7 +7,7 @@ const StyledSearchBox = styled.div({
     borderColor: borderColor,
     padding: '10px',
     borderRadius: borderRadious,
-    width: '650px',
+    width: '600px',
     margin: '30px 10px 30px 0'
   },
   '.search-button': {
