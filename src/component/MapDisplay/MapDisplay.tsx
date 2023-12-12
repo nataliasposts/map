@@ -22,16 +22,19 @@ const MapDisplay: React.FC<MapDisplayProps> = ({ location }) => {
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
       />
-      <Marker position={location} icon={
-        new L.Icon({
-          iconUrl: markerIconUrl,
-          shadowUrl: markerShadowUrl,
-          iconSize: [25, 41],
-          iconAnchor: [12, 41],
-          popupAnchor: [1, -34],
-          shadowSize: [41, 41],
-        })
-      } />
+      <Marker
+        position={location}
+        icon={
+          new L.Icon({
+            iconUrl: markerIconUrl,
+            shadowUrl: markerShadowUrl,
+            iconSize: [25, 41],
+            iconAnchor: [12, 41],
+            popupAnchor: [1, -34],
+            shadowSize: [41, 41]
+          })
+        }
+      />
     </MapContainer>
   );
 };

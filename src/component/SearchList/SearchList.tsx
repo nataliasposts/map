@@ -12,12 +12,11 @@ const SearchList: React.FC = () => {
     dispatch(cleanSearchHistory());
   };
 
-
   return (
     <StyledSearchList>
-      <div className='list-title_row'>
+      <div className="list-title_row">
         <h3>{TextEnum.SEARCH_HISTORY}</h3>
-        <button type="button" onClick={handleCleanHistoryClick} className='clean-button'>
+        <button type="button" onClick={handleCleanHistoryClick} className="clean-button">
           {TextEnum.CLEAN_BUTTON}
         </button>
       </div>
